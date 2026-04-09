@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Editar Doctor";
+}
+
+<h2>Editar Doctor</h2>
+
+<form method="post" class="form-card">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" name="name" value="Dr. Pérez" required />
+
+    <label for="specialty">Especialidad</label>
+    <input type="text" id="specialty" name="specialty" value="Cardiología" required />
+
+    <label for="email">Correo</label>
+    <input type="email" id="email" name="email" value="doctor.perez@hospital.com" required />
+
+    <label for="phone">Teléfono</label>
+    <input type="text" id="phone" name="phone" value="809-555-9876" required />
+
+    <label for="availability">Disponibilidad</label>
+    <input type="text" id="availability" name="availability" value="Lunes, Miércoles, Viernes" required />
+
+    <button type="submit" class="btn">Guardar cambios</button>
+    <a href="/Doctors/Index" class="btn">Cancelar</a>
+</form>

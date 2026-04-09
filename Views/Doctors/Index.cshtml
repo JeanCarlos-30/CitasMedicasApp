@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Agenda de Doctores";
+}
+
+<h2>Agenda de Doctores</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Especialidad</th>
+            <th>Disponibilidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dr. Pérez</td>
+            <td>Cardiología</td>
+            <td>Lunes, Miércoles, Viernes</td>
+            <td>
+                <a href="/Doctors/Edit/1" class="btn">Editar</a>
+                <a href="/Doctors/Details/1" class="btn">Detalles</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a href="/Doctors/Create" class="btn">Agregar nuevo doctor</a>
